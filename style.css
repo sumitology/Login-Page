@@ -1,0 +1,169 @@
+body {
+   background: rgb(214, 214, 214);
+   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  
+}
+
+#myVideo {
+   position: fixed;
+   right: 0;
+   bottom: 0;
+   top: 0%;
+   min-width: 100%;
+   min-height: 100%;
+   z-index: -2;
+}
+
+.container {
+   width: 1000px;
+   height: 550px;
+   margin: 100px auto;
+   display: flex;
+   
+   border-radius: 10px;
+   box-shadow: 5px 5px 7px gray, -5px -5px 7px gray;
+}
+
+@media only screen and (max-width: 600px) {
+   div.pic {
+       display: none;
+   }
+   div.container{
+       width: 400px;
+   }
+}
+
+.login {
+   flex: 1;
+   font-weight: 10;
+   color: black;
+}
+
+form {
+   width: 300px;
+   margin: 80px auto;
+   margin-left: 15%;
+   font-weight: bold;
+   font-size: 18px;
+}
+
+form h1 {
+   text-align: center;
+   text-transform: uppercase;
+   font-weight: bolder;
+   font-size: 24px;
+}
+
+p {
+   text-align: center;
+}
+
+form label {
+   display: block;
+   font-size: 18px;
+   font-weight: bold;
+   padding: 10px;
+}
+
+input {
+   width: 100%;
+   padding: 12px;
+   margin: 10px 0;
+   outline: none;
+   border: 2px solid gray;
+   border-radius: 8px;
+   font-size: 18px;
+   font-weight: bold;
+}
+
+button {
+   width: 100%;
+   margin: 10px 0;
+   padding: 12px;
+   background: rgb(210, 11, 37);
+   outline: none;
+   border: none;
+   border-radius: 25px;
+   color: white;
+   font-size: 20px;
+   font-weight: bold;
+   cursor: pointer;
+   transition: 0.5s;
+}
+
+button span {
+   display: inline-block;
+   position: relative;
+   transition: 0.5s;
+}
+
+button span:after {
+   content: "\00bb";
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   right: -20px;
+   transition: 0.5s;
+}
+
+button:hover span {
+   padding-right: 30px;
+}
+
+button:hover span:after {
+   opacity: 1;
+   right: 0;
+}
+
+p a {
+   text-decoration: none;
+   color:black;
+   font-weight: bold;
+}
+ a:hover{
+   color: red;
+   padding:2px;
+   cursor: pointer;
+ }
+
+hr {
+   border-top: 2px solid purple;
+   width: 80%;
+   align-items: center;
+}
+
+.pic {
+   flex: 2;
+   background-size: cover;
+   background-position: center top;
+   width: 10%;   
+   padding:5%;
+   margin-left: 2%;
+   top: 0%;
+ 
+}
+
+.pic img {
+   width: 480px;
+   margin: 10px 0 0 100px;
+   background-size: cover;
+   
+}
+
+img:hover {
+   padding: 3px;
+   cursor: pointer;
+}
+.error-message {
+   color: red;
+   font-size: 14px;
+   display: none; /* Initially hide error messages */
+}
+
+input.error {
+   border-color: red;
+}
+
+input.success {
+   border-color: green;
+}
